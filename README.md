@@ -9,6 +9,7 @@
 The `options` argument is always optional.
 
 `numbers` is an alias for `integers`
+
 `sequence` is an alias for `sequences`
 
 ```javascript
