@@ -119,9 +119,7 @@ var methods = {
 
 for (var method in methods) {
     if (typeof methods[method] === "string") {
-        console.log(methods[method]);
         random[method] = random[methods[method]];
-        console.log(random[method] === random[methods[method]]);
     } else {
         random[method] = (function(method) {
             return function(opts, callback) {
