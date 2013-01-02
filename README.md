@@ -9,6 +9,7 @@
 The `options` argument is always optional.
 
 `numbers` is an alias for `integers`
+`sequence` is an alias for `sequences`
 
 ```javascript
 var random = require("node-random");
@@ -43,7 +44,7 @@ See [here](http://www.random.org/clients/http/#integers) for the meanings (Optio
 * `base` - `10`
 * `random` - `"new"`
 
-### `random.sequences`
+### `random.sequences`, `random.sequence`
 
 See [here](http://www.random.org/clients/http/#sequences) for the meanings (Option names are slightly different);
 
