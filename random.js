@@ -7,7 +7,7 @@ var random = module.exports = {};
 var endpoint = "http://www.random.org/";
 
 // Copied and modified from underscore source
-defaults = function(obj) {
+var defaults = function(obj) {
     [].slice.call(arguments, 1).forEach(function(source) {
         if (source) {
             for (var prop in source) {
@@ -19,7 +19,7 @@ defaults = function(obj) {
 };
 
 // Copied and modified from underscore source
-extend = function(obj) {
+var extend = function(obj) {
     [].slice.call(arguments, 1).forEach(function(source) {
         if (source) {
             for (var prop in source) {
@@ -46,7 +46,7 @@ var onoffMappings = {
     "false": "off"
 };
 
-remapKeys = function(obj, mappings) {
+var remapKeys = function(obj, mappings) {
     var remapped = extend({}, obj);
     for (var prop in mappings) {
         if (obj[prop] != null) {
@@ -57,7 +57,7 @@ remapKeys = function(obj, mappings) {
     return remapped;
 };
 
-remapValues = function(obj, mappings) {
+var remapValues = function(obj, mappings) {
     var remapped = extend({}, obj);
     for (var prop in remapped) {
         key = JSON.stringify(obj[prop]);
