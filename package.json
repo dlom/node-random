@@ -1,0 +1,15 @@
+{
+    "name": "node-random",
+    "version": "0.0.1",
+    "description": "random.org client",
+    "main": "random.js",
+    "dependencies": {
+        "request": "*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Dlom/node-random.git"
+    },
+    "author": "Mark Old",
+    "license": "WTFPL"
+}
