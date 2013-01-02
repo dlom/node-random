@@ -2,14 +2,24 @@
     "name": "node-random",
     "version": "0.0.1",
     "description": "random.org client",
+    "keywords": [
+        "random",
+        "random.org"
+        ],
     "main": "random.js",
+    "engines": {
+        "node": "*"
+    },
+    "license": {
+        "type": "WTFPL",
+        "url": "https://github.com/Dlom/node-random/blob/master/LICENSE"
+    },
     "dependencies": {
-        "request": "*"
+        "request": "2.12.x"
     },
     "repository": {
         "type": "git",
         "url": "git://github.com/Dlom/node-random.git"
     },
-    "author": "Mark Old",
-    "license": "WTFPL"
+    "author": "Mark Old"
 }
