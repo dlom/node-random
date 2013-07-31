@@ -1,6 +1,6 @@
 {
     "name": "node-random",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "random.org client",
     "keywords": [
         "random",
