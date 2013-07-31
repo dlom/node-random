@@ -11,7 +11,7 @@
         "node": "*"
     },
     "license": {
-        "type": "WTFPL",
+        "type": "MIT",
         "url": "https://github.com/Dlom/node-random/blob/master/LICENSE"
     },
     "dependencies": {
