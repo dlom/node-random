@@ -19,7 +19,7 @@ random.integers(options, function(error, data) {
     // data is an array of numbers
 });
 
-random.sequences(options, function(error, data) {
+random.sequences(options, function(error, quota) {
     // data is an array of numbers
 });
 
@@ -116,7 +116,7 @@ random.strings({
 });
 
 // Check your quota
-random.quota(function(error, data) {
+random.quota(function(error, quota) {
     console.log("Remaining bytes: " + quota)
 });
 ```
