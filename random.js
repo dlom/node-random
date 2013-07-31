@@ -70,7 +70,9 @@ var remapValues = function(obj, mappings) {
 
 var parseNumbers = function(raw, opts) {
     var data = raw.trim().split("\n").map(function(x) {
-        return x.split("\t");
+        return x.split("\t").map(function(y) {
+            return parseInt(y, 10);
+        });
     });
     return (opts.col === 1) ? data.map(function(x) { return x[0]; }) : data;
 };
