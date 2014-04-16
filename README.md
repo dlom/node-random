@@ -1,4 +1,6 @@
-# node-random -- A random.org api wrapper
+# node-random
+
+A [random.org](random.org) API client
 
 ## Install
 
