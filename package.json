@@ -1,25 +1,31 @@
 {
-    "name": "node-random",
-    "version": "0.0.3",
-    "description": "random.org client",
-    "keywords": [
-        "random",
-        "random.org"
-        ],
-    "main": "random.js",
-    "engines": {
-        "node": "*"
-    },
-    "license": {
-        "type": "MIT",
-        "url": "https://github.com/Dlom/node-random/blob/master/LICENSE"
-    },
-    "dependencies": {
-        "request": "2.12.x"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/Dlom/node-random.git"
-    },
-    "author": "Mark Old"
+  "name": "node-random",
+  "version": "1.0.0",
+  "description": "random.org client",
+  "main": "random.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dlom/node-random.git"
+  },
+  "keywords": [
+    "random",
+    "random.org"
+  ],
+  "author": "Mark Old",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dlom/node-random/issues"
+  },
+  "dependencies": {
+    "request": "^2.34.0"
+  },
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "express": "^4.0.0",
+    "eight-track": "^1.7.0",
+    "chai": "^1.9.1"
+  }
 }

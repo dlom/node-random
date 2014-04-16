@@ -1,0 +1,29 @@
+{
+  "request": {
+    "httpVersion": "1.1",
+    "headers": {
+      "host": "localhost:1337",
+      "connection": "keep-alive"
+    },
+    "trailers": {},
+    "method": "GET",
+    "url": "/quota/?ip=&format=plain",
+    "body": ""
+  },
+  "response": {
+    "httpVersion": "1.1",
+    "headers": {
+      "server": "Apache/2.2.22 (Debian)",
+      "vary": "Accept-Encoding",
+      "content-type": "text/plain;charset=utf-8",
+      "date": "Wed, 16 Apr 2014 04:50:56 GMT",
+      "access-control-allow-origin": "*",
+      "connection": "Keep-Alive",
+      "x-powered-by": "PHP/5.4.4-14+deb7u8",
+      "content-length": "8"
+    },
+    "trailers": {},
+    "statusCode": 200,
+    "body": "4639316\n"
+  }
+}

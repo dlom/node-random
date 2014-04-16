@@ -2,9 +2,9 @@ var request = require("request");
 var qs = require("querystring");
 var statusCodes = require("http").STATUS_CODES;
 
-var random = module.exports = {};
-
-var endpoint = "http://www.random.org/";
+var random = module.exports = {
+    "endpoint": "http://www.random.org"
+};
 
 // Copied and modified from underscore source
 var defaults = function(obj) {
@@ -41,7 +41,7 @@ var randomMappings = {
     "lower": "loweralpha"
 };
 
-var onoffMappings = {
+var onOffMappings = {
     "true": "on",
     "false": "off"
 };
@@ -70,15 +70,18 @@ var remapValues = function(obj, mappings) {
 
 var parseNumbers = function(raw, opts) {
     var data = raw.trim().split("\n").map(function(x) {
-        return x.split("\t").map(function(y) {
-            return parseInt(y, 10);
+        return x.trim().split("\t").map(function(y) {
+            return parseInt(y, opts.base);
         });
     });
-    return (opts.col === 1) ? data.map(function(x) { return x[0]; }) : data;
+    if (opts.col === 1) data = data.map(function(x) { return x[0]; });
+    if (opts.num === 1) data = data[0];
+    return data;
 };
 
 var parseStrings = function(raw, opts) {
-    return raw.trim().split("\n");
+    var data = raw.trim().split("\n");
+    return (opts.num === 1) ? data[0] : data;
 };
 
 var methods = {
@@ -116,7 +119,8 @@ var methods = {
             "random": "new"
         },
         "parse": parseStrings
-    }
+    },
+    "string": "strings"
 }
 
 for (var method in methods) {
@@ -134,9 +138,9 @@ for (var method in methods) {
                 opts = defaults(opts, methods[method].defaultOpts);
                 opts = extend(opts, { "format": "plain" });
                 opts = remapKeys(opts, randomMappings);
-                opts = remapValues(opts, onoffMappings);
+                opts = remapValues(opts, onOffMappings);
 
-                var url = endpoint + method + "?" + qs.stringify(opts);
+                var url = random.endpoint + "/" + method + "/?" + qs.stringify(opts);
                 request.get(url, function(error, response, body) {
                     var data;
                     if (!error && response.statusCode !== 200) {
@@ -172,7 +176,7 @@ random.quota = function(opts, callback) {
     opts = defaults(opts, defaultOpts);
     opts = extend(opts, { "format": "plain" });
 
-    var url = endpoint + method + "?" + qs.stringify(opts);
+    var url = random.endpoint + "/" + method + "/?" + qs.stringify(opts);
     request.get(url, function(error, response, body) {
         var data;
         if (!error && response.statusCode !== 200) {

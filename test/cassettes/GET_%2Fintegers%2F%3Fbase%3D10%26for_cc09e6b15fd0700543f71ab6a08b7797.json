@@ -1,0 +1,36 @@
+{
+  "request": {
+    "httpVersion": "1.1",
+    "headers": {
+      "host": "localhost:1337",
+      "connection": "keep-alive"
+    },
+    "trailers": {},
+    "method": "GET",
+    "url": "/integers/?base=10&format=plain&num=100&min=0&max=10000&col=5&rnd=new",
+    "body": ""
+  },
+  "response": {
+    "httpVersion": "1.1",
+    "headers": {
+      "server": "Apache/2.2.22 (Debian)",
+      "vary": "Accept-Encoding",
+      "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "rdo-authenticated-login": "-",
+      "content-type": "text/plain;charset=utf-8",
+      "date": "Wed, 16 Apr 2014 04:50:55 GMT",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "pragma": "no-cache",
+      "access-control-allow-origin": "*",
+      "connection": "Keep-Alive",
+      "set-cookie": [
+        "RDOSESSION=dirtkn6i93um6opk71vpsirhn7; path=/; domain=.random.org"
+      ],
+      "x-powered-by": "PHP/5.4.4-14+deb7u8",
+      "content-length": "488"
+    },
+    "trailers": {},
+    "statusCode": 200,
+    "body": "8067\t6651\t4869\t6808\t4098\n9199\t9704\t7987\t3284\t8363\n9353\t5794\t9410\t4005\t1546\n27\t4410\t4402\t9199\t6165\n6639\t8198\t6985\t6283\t6410\n5142\t5757\t6005\t4388\t8359\n1808\t5041\t9190\t43\t5155\n7156\t7595\t7533\t7905\t81\n2598\t5392\t8704\t1113\t9220\n4773\t2344\t5757\t9076\t8927\n885\t9173\t5431\t6661\t6487\n7601\t3627\t5150\t6199\t1491\n1720\t4896\t7707\t2797\t6485\n9675\t5347\t716\t9487\t774\n2747\t6060\t5161\t6266\t8885\n1878\t5116\t1869\t8909\t1965\n5802\t5912\t484\t8191\t9229\n6422\t3469\t9376\t7873\t7178\n6912\t3697\t6714\t1881\t118\n399\t4150\t7444\t4947\t8505\n"
+  }
+}

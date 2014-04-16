@@ -1,0 +1,33 @@
+{
+  "request": {
+    "httpVersion": "1.1",
+    "headers": {
+      "host": "localhost:1337",
+      "connection": "keep-alive"
+    },
+    "trailers": {},
+    "method": "GET",
+    "url": "/sequences/?base=10&format=plain&min=1&max=10&col=1&rnd=new",
+    "body": ""
+  },
+  "response": {
+    "httpVersion": "1.1",
+    "headers": {
+      "server": "Apache/2.2.22 (Debian)",
+      "vary": "Accept-Encoding",
+      "rdo-authenticated-login": "-",
+      "content-type": "text/plain;charset=utf-8",
+      "date": "Wed, 16 Apr 2014 04:50:55 GMT",
+      "access-control-allow-origin": "*",
+      "connection": "Keep-Alive",
+      "set-cookie": [
+        "RDOSESSION=8l8cqdvl8edprrep9k03kvnah7; path=/; domain=.random.org"
+      ],
+      "x-powered-by": "PHP/5.4.4-14+deb7u8",
+      "content-length": "21"
+    },
+    "trailers": {},
+    "statusCode": 200,
+    "body": "8\n2\n7\n4\n6\n10\n9\n3\n1\n5\n"
+  }
+}

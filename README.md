@@ -34,7 +34,7 @@ random.quota(options, function(error, data) {
 
 ## Options Defaults
 
-### `random.integers`, `random.numbers`
+### `random.integers`
 
 See [here](http://www.random.org/clients/http/#integers) for the meanings (Option names are slightly different);
 
@@ -45,17 +45,17 @@ See [here](http://www.random.org/clients/http/#integers) for the meanings (Optio
 * `base` - `10`
 * `random` - `"new"`
 
-### `random.sequences`, `random.sequence`
+### `random.sequences`
 
 See [here](http://www.random.org/clients/http/#sequences) for the meanings (Option names are slightly different);
 
 * `minimum` - `0`
-* `maximum` - `10000`
+* `maximum` - `10`
 * `columns` - `1` (When this is more than 1, `data` is a 2D array -- rows by columns)
 * `base` - `10`
 * `random` - `"new"`
 
-### `random.numbers`
+### `random.strings`
 
 See [here](http://www.random.org/clients/http/#strings) for the meanings (Option names are slightly different);
 
@@ -125,3 +125,4 @@ random.quota(function(error, quota) {
 
 * `random.numbers` = `random.integers`
 * `random.sequence` = `random.sequences`
+* `random.string` = `random.strings`
