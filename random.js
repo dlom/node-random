@@ -3,7 +3,7 @@ var qs = require("querystring");
 var statusCodes = require("http").STATUS_CODES;
 
 var random = module.exports = {
-    "endpoint": "http://www.random.org"
+    "endpoint": "https://www.random.org"
 };
 
 // Copied and modified from underscore source
