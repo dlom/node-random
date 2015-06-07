@@ -1,6 +1,6 @@
 # node-random [![Build Status](https://travis-ci.org/dlom/node-random.svg?branch=master)](https://travis-ci.org/dlom/node-random)
 
-A [random.org](random.org) API client
+A [random.org](https://www.random.org) API client
 
 ## Install
 
