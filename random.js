@@ -1,6 +1,7 @@
-var request = require("request");
+var request = require("request").defaults({ "jar": true })
 var qs = require("querystring");
 var statusCodes = require("http").STATUS_CODES;
+var ua = require("random-ua");
 
 var random = module.exports = {
     "endpoint": "https://www.random.org"
@@ -141,7 +142,12 @@ for (var method in methods) {
                 opts = remapValues(opts, onOffMappings);
 
                 var url = random.endpoint + "/" + method + "/?" + qs.stringify(opts);
-                request.get(url, function(error, response, body) {
+                request.get({
+                    "url": url,
+                    "headers": {
+                        "User-Agent": ua.generate()
+                    }
+                }, function(error, response, body) {
                     var data;
                     if (!error && response.statusCode !== 200) {
                         data = null;
@@ -177,7 +183,12 @@ random.quota = function(opts, callback) {
     opts = extend(opts, { "format": "plain" });
 
     var url = random.endpoint + "/" + method + "/?" + qs.stringify(opts);
-    request.get(url, function(error, response, body) {
+    request.get({
+        "url": url,
+        "headers": {
+            "User-Agent": ua.generate()
+        }
+    }, function(error, response, body) {
         var data;
         if (!error && response.statusCode !== 200) {
             data = null;
