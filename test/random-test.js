@@ -11,6 +11,9 @@ describe("random", function() {
             "fixtureDir": "test/cassettes"
         })).listen(1337, function() {
             random.endpoint = "http://localhost:1337";
+            random.uaGenerator = function() {
+                return "Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0";
+            }
             done();
         });
     });

@@ -4,7 +4,8 @@ var statusCodes = require("http").STATUS_CODES;
 var ua = require("random-ua");
 
 var random = module.exports = {
-    "endpoint": "https://www.random.org"
+    "endpoint": "https://www.random.org",
+    "uaGenerator": ua.generate
 };
 
 // Copied and modified from underscore source
@@ -145,7 +146,7 @@ for (var method in methods) {
                 request.get({
                     "url": url,
                     "headers": {
-                        "User-Agent": ua.generate()
+                        "User-Agent": random.uaGenerator()
                     }
                 }, function(error, response, body) {
                     var data;
@@ -186,7 +187,7 @@ random.quota = function(opts, callback) {
     request.get({
         "url": url,
         "headers": {
-            "User-Agent": ua.generate()
+            "User-Agent": random.uaGenerator()
         }
     }, function(error, response, body) {
         var data;

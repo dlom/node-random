@@ -1,0 +1,41 @@
+{
+  "request": {
+    "httpVersion": "1.1",
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0",
+      "host": "localhost:1337",
+      "connection": "close"
+    },
+    "trailers": {},
+    "method": "GET",
+    "url": "/integers/?base=10&format=plain&num=3&min=1&max=5&col=1&rnd=new",
+    "bodyEncoding": "utf8",
+    "body": ""
+  },
+  "response": {
+    "httpVersion": "1.1",
+    "headers": {
+      "server": "cloudflare-nginx",
+      "date": "Mon, 18 Apr 2016 08:47:00 GMT",
+      "content-type": "text/plain;charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "set-cookie": [
+        "__cfduid=d83d4abe396fcbb5e530c01935594ff801460969220; expires=Tue, 18-Apr-17 08:47:00 GMT; path=/; domain=.random.org; HttpOnly",
+        "RDOSESSION=ao4ipah3pvbm8r2k5drvkj0sc5; path=/; domain=.random.org"
+      ],
+      "x-powered-by": "PHP/5.4.45-0+deb7u2",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "pragma": "no-cache",
+      "rdo-authenticated-login": "-",
+      "access-control-allow-origin": "*",
+      "vary": "Accept-Encoding",
+      "cf-ray": "2956d979792b0502-SEA"
+    },
+    "trailers": {},
+    "statusCode": 200,
+    "bodyEncoding": "utf8",
+    "body": "4\n1\n2\n"
+  }
+}

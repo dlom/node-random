@@ -1,0 +1,36 @@
+{
+  "request": {
+    "httpVersion": "1.1",
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0",
+      "host": "localhost:1337",
+      "connection": "close"
+    },
+    "trailers": {},
+    "method": "GET",
+    "url": "/quota/?ip=&format=plain",
+    "bodyEncoding": "utf8",
+    "body": ""
+  },
+  "response": {
+    "httpVersion": "1.1",
+    "headers": {
+      "server": "cloudflare-nginx",
+      "date": "Mon, 18 Apr 2016 08:47:03 GMT",
+      "content-type": "text/plain;charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "set-cookie": [
+        "__cfduid=d04d53183dff18f9bdbcbc73385c9ad9b1460969222; expires=Tue, 18-Apr-17 08:47:02 GMT; path=/; domain=.random.org; HttpOnly"
+      ],
+      "x-powered-by": "PHP/5.4.45-0+deb7u2",
+      "access-control-allow-origin": "*",
+      "vary": "Accept-Encoding",
+      "cf-ray": "2956d98b4d491baf-SEA"
+    },
+    "trailers": {},
+    "statusCode": 200,
+    "bodyEncoding": "utf8",
+    "body": "925580\n"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "request": {
+    "httpVersion": "1.1",
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0",
+      "host": "localhost:1337",
+      "connection": "close"
+    },
+    "trailers": {},
+    "method": "GET",
+    "url": "/sequences/?base=10&format=plain&min=1&max=100&col=5&rnd=new",
+    "bodyEncoding": "utf8",
+    "body": ""
+  },
+  "response": {
+    "httpVersion": "1.1",
+    "headers": {
+      "server": "cloudflare-nginx",
+      "date": "Mon, 18 Apr 2016 08:47:02 GMT",
+      "content-type": "text/plain;charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "set-cookie": [
+        "__cfduid=db782d59e7fa7ed023d3c033cea526e911460969221; expires=Tue, 18-Apr-17 08:47:01 GMT; path=/; domain=.random.org; HttpOnly",
+        "RDOSESSION=6ncjfupjdhalhm9q8retdq7423; path=/; domain=.random.org"
+      ],
+      "x-powered-by": "PHP/5.4.45-0+deb7u2",
+      "rdo-authenticated-login": "-",
+      "access-control-allow-origin": "*",
+      "vary": "Accept-Encoding",
+      "cf-ray": "2956d983987a1bd3-SEA"
+    },
+    "trailers": {},
+    "statusCode": 200,
+    "bodyEncoding": "utf8",
+    "body": "42\t12\t69\t13\t38\n7\t39\t86\t71\t35\n83\t67\t78\t82\t47\n91\t74\t1\t97\t23\n93\t72\t26\t63\t84\n80\t81\t55\t28\t60\n99\t85\t79\t25\t40\n44\t3\t100\t37\t50\n34\t77\t4\t21\t56\n8\t98\t6\t36\t76\n18\t24\t32\t43\t62\n20\t70\t49\t68\t54\n51\t87\t65\t75\t59\n73\t66\t88\t92\t5\n2\t17\t48\t14\t96\n53\t94\t89\t9\t95\n15\t22\t27\t30\t11\n41\t10\t16\t58\t33\n64\t57\t46\t61\t31\n19\t29\t45\t52\t90\n"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "request": {
+    "httpVersion": "1.1",
+    "headers": {
+      "user-agent": "Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0",
+      "host": "localhost:1337",
+      "connection": "close"
+    },
+    "trailers": {},
+    "method": "GET",
+    "url": "/integers/?base=10&format=plain&num=100&min=0&max=10000&col=5&rnd=new",
+    "bodyEncoding": "utf8",
+    "body": ""
+  },
+  "response": {
+    "httpVersion": "1.1",
+    "headers": {
+      "server": "cloudflare-nginx",
+      "date": "Mon, 18 Apr 2016 08:47:00 GMT",
+      "content-type": "text/plain;charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "set-cookie": [
+        "__cfduid=dfdcb1b3d1a98eba8c02b082b53fd3ad91460969220; expires=Tue, 18-Apr-17 08:47:00 GMT; path=/; domain=.random.org; HttpOnly",
+        "RDOSESSION=9fb1815m7t4onj96d64clmoe96; path=/; domain=.random.org"
+      ],
+      "x-powered-by": "PHP/5.4.45-0+deb7u2",
+      "expires": "Thu, 19 Nov 1981 08:52:00 GMT",
+      "cache-control": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "pragma": "no-cache",
+      "rdo-authenticated-login": "-",
+      "access-control-allow-origin": "*",
+      "vary": "Accept-Encoding",
+      "cf-ray": "2956d97bf95f2a1f-SEA"
+    },
+    "trailers": {},
+    "statusCode": 200,
+    "bodyEncoding": "utf8",
+    "body": "2632\t4114\t5528\t6088\t2525\n4625\t577\t1842\t1190\t7556\n3217\t6852\t3074\t1912\t3351\n9780\t1916\t7329\t8725\t5089\n8999\t9109\t6596\t8807\t9959\n9734\t4557\t5909\t8778\t3465\n1163\t1515\t5416\t6118\t8643\n3480\t3273\t1035\t8307\t8948\n9211\t1878\t2044\t1895\t363\n1073\t6911\t4090\t7646\t756\n691\t3417\t6886\t4864\t2324\n1556\t6506\t8380\t4057\t771\n3670\t7832\t8800\t5644\t9862\n8997\t3576\t5173\t1789\t7200\n7365\t1430\t7514\t7346\t3795\n5414\t3869\t7035\t3011\t2534\n6207\t498\t2345\t6547\t4281\n2319\t8264\t7650\t949\t2568\n9909\t9501\t4453\t8338\t1179\n1003\t5476\t7985\t29\t4418\n"
+  }
+}
